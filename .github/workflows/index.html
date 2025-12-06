@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wet Bandits Return – Bay Hill Drive</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div id="snow-back"></div>
+  <div id="snow-front"></div>
+
+  <main id="app">
+
+    <!-- START SCREEN -->
+    <section id="start-screen" class="card">
+      <h1 class="game-title">Wet Bandits Return</h1>
+      <p class="tagline">
+        The Wet Bandits are back on Bay Hill Drive. Help Kevin choose the traps
+        and send those guys right back to jail!
+      </p>
+      <button id="start-btn" class="btn primary">Start the Adventure</button>
+    </section>
+
+    <!-- GAME SCREEN -->
+    <section id="game-screen" class="hidden">
+      <header id="top-bar">
+        <div id="avatar-wrap">
+          <img id="kevin-avatar" src="assets/kevin-avatar.jpg"
+               alt="Kevin guarding the house" />
+        </div>
+        <div class="title-wrap">
+          <h2 class="small-title">Wet Bandits Return</h2>
+          <div id="step-indicator"></div>
+        </div>
+      </header>
+
+      <section id="story-panel" class="card">
+        <h3 id="scene-title"></h3>
+        <p id="story-text"></p>
+
+        <div id="choices"></div>
+        <p id="feedback-text"></p>
+
+        <div id="clip-panel" aria-live="polite">
+          <div id="clip-label">Scene moment</div>
+          <p id="clip-text"></p>
+        </div>
+      </section>
+
+      <section id="progress-panel">
+        <div id="footprints"></div>
+        <div id="progress-bar-outer">
+          <div id="progress-bar-inner"></div>
+        </div>
+        <div id="progress-label"></div>
+        <button id="restart-btn" class="btn ghost" type="button">
+          Restart
+        </button>
+      </section>
+
+    </section>
+
+  </main>
+
+  <footer id="credits">
+    Fan-made Home Alone–inspired browser game for the Bay Hill Drive display.
+    v6 — Kevin avatar edition.
+  </footer>
+
+  <!-- AUDIO (ready to attach) -->
+  <audio id="snd-correct" src="" preload="auto"></audio>
+  <audio id="snd-wrong" src="" preload="auto"></audio>
+  <audio id="snd-siren" src="" preload="auto" loop></audio>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
